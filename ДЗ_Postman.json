@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "2cbef2f4-c6c3-4d42-b4f8-a0ebb3ed3993",
+		"name": "ДЗ_Postman_Прозоров_Денис",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43345889"
+	},
+	"item": [
+		{
+			"name": "Запрос 1 .Передали 1  символ и 0 вложений",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer" ,
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"text\": \"1\",\r\n  \"attachments\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://staff-testing.testkontur.ru/api/v1/comments/21c5effe-b038-4082-92df-4dcca4d1061d",
+					"protocol": "https",
+					"host": [
+						"staff-testing",
+						"testkontur",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"comments",
+						"21c5effe-b038-4082-92df-4dcca4d1061d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Запрос 2 .Передали 1 вложение и 0 символов",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer" ,
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"text\": \"\",\r\n  \"attachments\": [\"823870dd-3d9c-4a9f-b721-2d3b5193dd5f\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://staff-testing.testkontur.ru/api/v1/comments/21c5effe-b038-4082-92df-4dcca4d1061d",
+					"protocol": "https",
+					"host": [
+						"staff-testing",
+						"testkontur",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"comments",
+						"21c5effe-b038-4082-92df-4dcca4d1061d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Запрос 3 .Передали 5000 символов",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer" ,
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"text\" : \"В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a bc d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = >  И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # % & ' ( ) * + ,В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://staff-testing.testkontur.ru/api/v1/comments/21c5effe-b038-4082-92df-4dcca4d1061d",
+					"protocol": "https",
+					"host": [
+						"staff-testing",
+						"testkontur",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"comments",
+						"21c5effe-b038-4082-92df-4dcca4d1061d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Запрос 4 .Передали 20 вложений",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer" ,
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"attachments\": [\r\n\"823870dd-3d9c-4a9f-b721-2d3b5193dd5f\",\r\n\"c57f8fe8-9419-49d1-a3dd-e6b3619beb96\",\r\n\"24d6bbe3-b055-4fb7-a1d9-c452f87b160d\",\r\n\"00210381-67c7-4b9c-8d5b-443fcceb7486\",\r\n\"cd0733a8-d962-4599-93da-a96f993d66c4\",\r\n\"b37e0b1e-3e9f-4879-95ef-9b7672812469\",\r\n\"ac0a783a-9e24-4e45-9eaa-393c432bfa54\",\r\n\"fa530b7e-9d49-48af-82b1-208b10610f90\",\r\n\"47682977-a118-40da-9e82-0bd124945f6a\",\r\n\"d3871f6a-e54c-470c-a932-1d75ecdaaff4\",\r\n\"56c32d65-04e2-46c4-92a1-1f9fd0a96582\",\r\n\"5eaf0356-4a8d-4a94-a186-3924e6d2b986\",\r\n\"d911a3dd-6d9a-46c6-963b-be8bddd4861a\",\r\n\"2c794741-a064-4a7c-a746-d9592b75e461\",\r\n\"4cc348d9-ca5f-4518-9d86-fb8e7f18a13a\",\r\n\"9a986d2e-2e83-4317-9644-ddd819bf4492\",\r\n\"1c5fd713-980b-4a8f-84d9-c0d992bdf780\",\r\n\"1813ab67-4a05-4074-84a8-620507e5a2f4\",\r\n\"87601c6d-438e-410f-88c5-791c8fa3c895\",\r\n\"7f990173-c7c5-445e-b5df-9da81537b766\" \r\n]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://staff-testing.testkontur.ru/api/v1/comments/21c5effe-b038-4082-92df-4dcca4d1061d",
+					"protocol": "https",
+					"host": [
+						"staff-testing",
+						"testkontur",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"comments",
+						"21c5effe-b038-4082-92df-4dcca4d1061d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Запрос 5 .Передали 0 символов и 0 вложений",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer" ,
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"text\": \"\",\r\n  \"attachments\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://staff-testing.testkontur.ru/api/v1/comments/21c5effe-b038-4082-92df-4dcca4d1061d",
+					"protocol": "https",
+					"host": [
+						"staff-testing",
+						"testkontur",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"comments",
+						"21c5effe-b038-4082-92df-4dcca4d1061d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Запрос 6 .Передали 5001 символов",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer" ,
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"text\" : \"В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a bc d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = >  И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ ` { | } ~В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я и в нижнем регистре а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я Также представлены все буквы латиницы в верхнем регистре A B C D E F G H I J K L M N O P Q R S T U V W X Y Z и в нижнем регистре a b c d e f g h i j k l m n o p q r s t u v w x y z !  # % & ' ( ) * + ,В этом тексте представлены все буквы кириллицы в верхнем регистре А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т+\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://staff-testing.testkontur.ru/api/v1/comments/21c5effe-b038-4082-92df-4dcca4d1061d",
+					"protocol": "https",
+					"host": [
+						"staff-testing",
+						"testkontur",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"comments",
+						"21c5effe-b038-4082-92df-4dcca4d1061d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Запрос 7 .Передали 21 вложение",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer" ,
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"attachments\": [\r\n\"823870dd-3d9c-4a9f-b721-2d3b5193dd5f\",\r\n\"c57f8fe8-9419-49d1-a3dd-e6b3619beb96\",\r\n\"24d6bbe3-b055-4fb7-a1d9-c452f87b160d\",\r\n\"00210381-67c7-4b9c-8d5b-443fcceb7486\",\r\n\"cd0733a8-d962-4599-93da-a96f993d66c4\",\r\n\"b37e0b1e-3e9f-4879-95ef-9b7672812469\",\r\n\"ac0a783a-9e24-4e45-9eaa-393c432bfa54\",\r\n\"fa530b7e-9d49-48af-82b1-208b10610f90\",\r\n\"47682977-a118-40da-9e82-0bd124945f6a\",\r\n\"d3871f6a-e54c-470c-a932-1d75ecdaaff4\",\r\n\"56c32d65-04e2-46c4-92a1-1f9fd0a96582\",\r\n\"5eaf0356-4a8d-4a94-a186-3924e6d2b986\",\r\n\"d911a3dd-6d9a-46c6-963b-be8bddd4861a\",\r\n\"2c794741-a064-4a7c-a746-d9592b75e461\",\r\n\"4cc348d9-ca5f-4518-9d86-fb8e7f18a13a\",\r\n\"9a986d2e-2e83-4317-9644-ddd819bf4492\",\r\n\"1c5fd713-980b-4a8f-84d9-c0d992bdf780\",\r\n\"1813ab67-4a05-4074-84a8-620507e5a2f4\",\r\n\"87601c6d-438e-410f-88c5-791c8fa3c895\",\r\n\"7f990173-c7c5-445e-b5df-9da81537b766\",\r\n\"6cf19878-e73c-439f-96c2-3c86f3323edb\"\r\n]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://staff-testing.testkontur.ru/api/v1/comments/21c5effe-b038-4082-92df-4dcca4d1061d",
+					"protocol": "https",
+					"host": [
+						"staff-testing",
+						"testkontur",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"comments",
+						"21c5effe-b038-4082-92df-4dcca4d1061d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Запрос 8 .Передали несуществующий GUID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer" ,
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"attachments\": [\"384676ba-fee7-4893-ba78-d1c93c73b080\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://staff-testing.testkontur.ru/api/v1/comments/21c5effe-b038-4082-92df-4dcca4d1061d",
+					"protocol": "https",
+					"host": [
+						"staff-testing",
+						"testkontur",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"comments",
+						"21c5effe-b038-4082-92df-4dcca4d1061d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Запрос 9 .Передали null во всех полях",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer" ,
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"text\": null,\r\n  \"attachments\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://staff-testing.testkontur.ru/api/v1/comments/21c5effe-b038-4082-92df-4dcca4d1061d",
+					"protocol": "https",
+					"host": [
+						"staff-testing",
+						"testkontur",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"comments",
+						"21c5effe-b038-4082-92df-4dcca4d1061d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Запрос 10 .Передали скрипт",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer" ,
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"text\": \"<script>alert(123)</script>\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://staff-testing.testkontur.ru/api/v1/comments/21c5effe-b038-4082-92df-4dcca4d1061d",
+					"protocol": "https",
+					"host": [
+						"staff-testing",
+						"testkontur",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"comments",
+						"21c5effe-b038-4082-92df-4dcca4d1061d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
