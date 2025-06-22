@@ -1,4 +1,4 @@
-Запрос для задания №1
+Р—Р°РїСЂРѕСЃ РґР»СЏ Р·Р°РґР°РЅРёСЏ в„–1
 
 SELECT passenger_id, passenger_name, contact_data
 FROM bookings.tickets
@@ -8,26 +8,26 @@ LIMIT 5;
 
 ===========================================
 
-Запрос для задания №2
+Р—Р°РїСЂРѕСЃ РґР»СЏ Р·Р°РґР°РЅРёСЏ в„–2
 
 INSERT INTO bookings.airports_data
-VALUES ('TBS','{"en":"Tbilisi International Airport", "ru":"Аэропорт Тбилиси"}','{"en":"Tbilisi", "ru":"Тбилиси"}','(44.963383, 41.605178)','Asia/Tbilisi'),
-       ('LHR','{"en":"Heathrow", "ru":"Хитроу"}','{"en":"London", "ru":"Лондон"}','(0.454295, 51.470022)','Europe/London'),
-       ('DXB','{"en":"Dubai International Airport", "ru":"Дубай"}','{"en":"Dubai", "ru":"Дубай"}','(55.364444, 25.252778)','Asia/Dubai');
+VALUES ('TBS','{"en":"Tbilisi International Airport", "ru":"РђСЌСЂРѕРїРѕСЂС‚ РўР±РёР»РёСЃРё"}','{"en":"Tbilisi", "ru":"РўР±РёР»РёСЃРё"}','(44.963383, 41.605178)','Asia/Tbilisi'),
+       ('LHR','{"en":"Heathrow", "ru":"РҐРёС‚СЂРѕСѓ"}','{"en":"London", "ru":"Р›РѕРЅРґРѕРЅ"}','(0.454295, 51.470022)','Europe/London'),
+       ('DXB','{"en":"Dubai International Airport", "ru":"Р”СѓР±Р°Р№"}','{"en":"Dubai", "ru":"Р”СѓР±Р°Р№"}','(55.364444, 25.252778)','Asia/Dubai');
 
 ===========================================
 
-Запрос для задания №3
+Р—Р°РїСЂРѕСЃ РґР»СЏ Р·Р°РґР°РЅРёСЏ в„–3
 
 UPDATE bookings.flights
 SET status='Delayed'
 WHERE scheduled_departure BETWEEN '2017-09-03 00:00:00+05' and '2017-09-03 17:59:59+05' 
       AND status='Scheduled' 
-      AND departure_airport=(SELECT airport_code FROM airports_data WHERE airport_name->'ru'='"Краснодар"');
+      AND departure_airport=(SELECT airport_code FROM airports_data WHERE airport_name->'ru'='"РљСЂР°СЃРЅРѕРґР°СЂ"');
 
 ===========================================
 
-Запрос для задания №4
+Р—Р°РїСЂРѕСЃ РґР»СЏ Р·Р°РґР°РЅРёСЏ в„–4
 
 SELECT tickets.passenger_name
 FROM tickets
